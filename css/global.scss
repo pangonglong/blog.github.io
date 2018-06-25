@@ -1,0 +1,87 @@
+body{
+	background: url('../images/body-bg.png');
+}
+.layui-wrap{
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+.layui-bg-white{
+	background-color: white;
+}
+
+.header{
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	top: 0;
+	background-color: #393D49;
+	&-logo{
+		position: absolute;
+		left: 5%;
+		top: 0;
+		img{
+			width: 80px;
+			height: 40px;
+			padding: 10px;
+		}
+	}
+	@media screen and (max-width: 640px){
+		&-logo{
+			left: 0;
+		}
+	}
+	.layui-nav{
+		width: 75%;
+		position: absolute;
+		left: 15%;
+	}
+	&-title{
+		width: 100%;
+		color: white;
+		line-height: 60px;
+		font-size: 16px;
+		text-align: center;
+	}
+}
+
+
+.layui-learn{
+	margin: 25px 0;
+    text-align: center;
+    font-weight: 300;
+    font-size: 0;
+    li{
+    	width: 27%;
+	    padding: 30px;
+	    line-height: 24px;
+	    display: inline-block;
+	    font-size: 14px;
+	    text-align: left;
+	    vertical-align: top;
+	    cursor: pointer;
+	    background: #fff;
+	    &:nth-child(2){
+	    	margin: 0 2%;
+	    }
+	    &:hover{
+	    	box-shadow: inset 0 0 38px rgba(0,0,0,.1);
+    		transition: all .15s ease;
+	    }
+    	.layui-field-title{
+	    	border-color: #d2d2d2;
+	    	margin: 10px 0 20px;
+		    border: none;
+		    border-top: 1px solid #e2e2e2;
+		    legend{
+		    	margin: 0 20px 20px 0;
+			    padding: 0 20px;
+			    text-align: center;
+		    }
+		    p{
+		    	height: 72px;
+	    		line-height: 24px;
+		    }
+	    }
+    }
+}
